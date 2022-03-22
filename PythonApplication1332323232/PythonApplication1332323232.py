@@ -1,5 +1,38 @@
 from tkinter import*
+from tkinter.messagebox import*
 tunn=Tk()
+
+def rus():
+	showinfo(title="Литература",message="Основной урок\n Учитель  Ljudmila Mikhailova\n Кабинет  B 221")
+def log():
+	showinfo(title="Логистика",message="Основной урок\n Учитель  Inessa Klemanskaja\n Кабинет  B 002")
+def mat():
+	showinfo(title="Математика",message="Основной урок\n Учитель  Nadewda Voronova\n Кабинет  B 133")
+def matem():
+	showinfo(title="Доп.Математика",message="Доп.урок\n Учитель  Nadewda Voronova\n Кабинет  B 133")
+def angl():
+	showinfo(title="Английский",message="Основной урок\n Учитель  Olga Borodina\n Кабинет  B 227")
+def est():
+	showinfo(title="Эстонский",message="Основной урок\n Учитель  Olesja Ojamäe\n Кабинет  B 234")
+def kemi():
+	showinfo(title="Доп.Химия",message="Доп.урок\n Учитель  Svetlana Pesestkaja\n Кабинет  B 144")
+def ests():
+	showinfo(title="Доп.Эстонский",message="Доп.урок\n Учитель  Olesja Ojamäe\n Кабинет  B 234")
+def prog():
+	showinfo(title="Програмирование",message="Основной урок\n Учитель  Marina Oleinik\n Кабинет  E 07")
+def kunst():
+	showinfo(title="Исскуство",message="Основной урок\n Учитель  Aleksandrova\n Кабинет  B 232")
+def fizra():
+	showinfo(title="Физкультура",message="Основной урок\n Учитель  Maksim\n Кабинет  Зал A")
+def füs():
+	showinfo(title="Физика",message="Основной урок\n Учитель  Nadewda Voronova\n Кабинет  B 133")
+def raken():
+	showinfo(title="Ракендусттарквара",message="Основной урок\n Учитель  Merkulova\n Кабинет  E 10")
+def angld():
+	showinfo(title="Доп.Английский",message="Доп.урок\n Учитель  Olga Borodina\n Кабинет  B 227")
+def okno():
+	showinfo(title="Oкно",message="Свободное время")
+
 #Päevad
 Label(text="           ",font="Arial 20").grid(row=0,column=0)
 Label(text="Esmaspäev",relief=RIDGE,font="Arial 20").grid(row=1,column=0)
@@ -20,36 +53,36 @@ Label(text="8",relief=RIDGE,font="Arial 20").grid(row=0,column=9)
 Label(text="9",relief=RIDGE,font="Arial 20").grid(row=0,column=10)
 Label(text="10",relief=RIDGE,font="Arial 20").grid(row=0,column=11)
 #Esmaspäev
-Label(text="Eesti keel\n Tugiõpe",bg="Grey",relief=RIDGE,font="Arial 20",width=10,height=3).grid(row=1,column=2)
-Label(text="Logistikateenused",bg="green",relief=RIDGE,font="Arial 20",width=20,height=3).grid(row=1,column=3,columnspan=2)
-Label(text="Matemaatika",bg="pink",relief=RIDGE,font="Arial 20",width=10,height=3).grid(row=1,column=5)
-Label(text="Matemaatika",bg="pink",relief=RIDGE,font="Arial 20",width=10,height=3).grid(row=1,column=6)
-Label(text="           ",font="Arial 20",width=10,height=3).grid(row=1,column=7)
-Label(text="Keel ja kirjandus",bg="Lightgreen",relief=RIDGE,font="Arial 20",width=10,height=3).grid(row=1,column=8)
-Label(text="Keel ja kirjandus",bg="Lightgreen",relief=RIDGE,font="Arial 20",width=10,height=3).grid(row=1,column=9)
-Label(text="Matemaatika\n Tugiõpe",bg="pink",relief=RIDGE,font="Arial 20",width=10,height=3).grid(row=1,column=10)
+Button(text="Eesti keel\n Tugiõpe",bg="Grey",relief=RIDGE,font="Arial 20",width=10,height=3,command=ests).grid(row=1,column=2)
+Button(text="Logistikateenused",bg="green",relief=RIDGE,font="Arial 20",width=20,height=3,command=log).grid(row=1,column=3,columnspan=2)
+Button(text="Matemaatika",bg="pink",relief=RIDGE,font="Arial 20",width=10,height=3,command=mat).grid(row=1,column=5)
+Button(text="Matemaatika",bg="pink",relief=RIDGE,font="Arial 20",width=10,height=3,command=mat).grid(row=1,column=6)
+Button(text="           ",font="Arial 20",width=10,height=3,command=okno).grid(row=1,column=7)
+Button(text="Keel ja kirjandus",bg="Lightgreen",relief=RIDGE,font="Arial 20",width=10,height=3,command=rus).grid(row=1,column=8)
+Button(text="Keel ja kirjandus",bg="Lightgreen",relief=RIDGE,font="Arial 20",width=10,height=3,command=rus).grid(row=1,column=9)
+Button(text="Matemaatika\n Tugiõpe",bg="pink",relief=RIDGE,font="Arial 20",width=10,height=3,command=matem).grid(row=1,column=10)
 #Teisipäev
-Label(text="Keemia\n Tugiõpe",bg="purple",relief=RIDGE,font="Arial 20",width=10,height=3).grid(row=2,column=2)
-Label(text="Programmeerimise\n alused",bg="Lightblue",relief=RIDGE,font="Arial 20",width=30,height=3).grid(row=2,column=3,columnspan=3)
-Label(text="           ",font="Arial 20",width=10,height=3).grid(row=2,column=6)
-Label(text="Füüsika",bg="pink",relief=RIDGE,font="Arial 20",width=20,height=3).grid(row=2,column=7,columnspan=2)
+Button(text="Keemia\n Tugiõpe",bg="purple",relief=RIDGE,font="Arial 20",width=10,height=3,command=kemi).grid(row=2,column=2)
+Button(text="Programmeerimise\n alused",bg="Lightblue",relief=RIDGE,font="Arial 20",width=30,height=3,command=prog).grid(row=2,column=3,columnspan=3)
+Button(text="           ",font="Arial 20",width=10,height=3,command=okno).grid(row=2,column=6)
+Button(text="Füüsika",bg="pink",relief=RIDGE,font="Arial 20",width=20,height=3,command=füs).grid(row=2,column=7,columnspan=2)
 #Kolmapäev
-Label(text="Inglise keel\n Tugiõpe",bg="pink",relief=RIDGE,font="Arial 20",width=10,height=3).grid(row=3,column=2)
-Label(text="Kunstained",bg="purple",relief=RIDGE,font="Arial 20",width=20,height=3).grid(row=3,column=3,columnspan=2)
-Label(text="           ",font="Arial 20",width=10,height=3).grid(row=3,column=5)
-Label(text="Kehaline kasvatus",bg="purple",relief=RIDGE,font="Arial 20",width=20,height=3).grid(row=3,column=6,columnspan=2)
+Button(text="Inglise keel\n Tugiõpe",bg="pink",relief=RIDGE,font="Arial 20",width=10,height=3,command=angl).grid(row=3,column=2)
+Button(text="Kunstained",bg="purple",relief=RIDGE,font="Arial 20",width=20,height=3,command=kunst).grid(row=3,column=3,columnspan=2)
+Button(text="           ",font="Arial 20",width=10,height=3,command=okno).grid(row=3,column=5)
+Button(text="Kehaline kasvatus",bg="purple",relief=RIDGE,font="Arial 20",width=20,height=3,command=fizra).grid(row=3,column=6,columnspan=2)
 #Neljapäev
-Label(text="Logistikateenused",bg="green",relief=RIDGE,font="Arial 20",width=20,height=3).grid(row=4,column=2,columnspan=2)
-Label(text="           ",font="Arial 20",width=10,height=3).grid(row=4,column=4)
-Label(text="Programmeerimise\n alused",bg="Lightblue",relief=RIDGE,font="Arial 20",width=20,height=3).grid(row=4,column=5,columnspan=2)
-Label(text="Arenduskeskkonna",bg="red",relief=RIDGE,font="Arial 20",width=20,height=3).grid(row=4,column=7,columnspan=2)
-Label(text="Eesti keel",bg="grey",relief=RIDGE,font="Arial 20",width=10,height=3).grid(row=4,column=9)
-Label(text="Eesti keel",bg="grey",relief=RIDGE,font="Arial 20",width=10,height=3).grid(row=4,column=10)
+Button(text="Logistikateenused",bg="green",relief=RIDGE,font="Arial 20",width=20,height=3,command=log).grid(row=4,column=2,columnspan=2)
+Button(text="           ",font="Arial 20",width=10,height=3,command=okno).grid(row=4,column=4)
+Button(text="Programmeerimise\n alused",bg="Lightblue",relief=RIDGE,font="Arial 20",width=20,height=3,command=prog).grid(row=4,column=5,columnspan=2)
+Button(text="Arenduskeskkonna",bg="red",relief=RIDGE,font="Arial 20",width=20,height=3,command=raken).grid(row=4,column=7,columnspan=2)
+Button(text="Eesti keel",bg="grey",relief=RIDGE,font="Arial 20",width=10,height=3,command=est).grid(row=4,column=9)
+Button(text="Eesti keel",bg="grey",relief=RIDGE,font="Arial 20",width=10,height=3,command=est).grid(row=4,column=10)
 #Reede
-Label(text="Arenduskeskkonna",bg="red",relief=RIDGE,font="Arial 20",width=20,height=3).grid(row=5,column=2,columnspan=2)
-Label(text="Programmeerimise alused",bg="Lightblue",relief=RIDGE,font="Arial 20",width=65,height=3).grid(row=5,column=4,columnspan=5)
-Label(text="Inglise keel",bg="lightgreen",relief=RIDGE,font="Arial 20",width=10,height=3).grid(row=5,column=9)
-Label(text="Inglise keel",bg="Lightgreen",relief=RIDGE,font="Arial 20",width=10,height=3).grid(row=5,column=10)
+Button(text="Arenduskeskkonna",bg="red",relief=RIDGE,font="Arial 20",width=20,height=3,command=raken).grid(row=5,column=2,columnspan=2)
+Button(text="Programmeerimise alused",bg="Lightblue",relief=RIDGE,font="Arial 20",width=65,height=3,command=prog).grid(row=5,column=4,columnspan=5)
+Button(text="Inglise keel",bg="lightgreen",relief=RIDGE,font="Arial 20",width=10,height=3,command=angl).grid(row=5,column=9)
+Button(text="Inglise keel",bg="Lightgreen",relief=RIDGE,font="Arial 20",width=10,height=3,command=angl).grid(row=5,column=10)
 
 
 
